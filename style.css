@@ -1,0 +1,120 @@
+/* Základní nastavení pro všechny stránky */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9f0d9; /* světle zelené pozadí */
+    color: #003300;
+}
+
+header {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    color: #336633; /* barevný nadpis */
+}
+
+/* Navigace */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #c8edc8;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #a1d8a1;
+}
+
+/* Hlavní obsah */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #336633;
+}
+
+/* Obrázky */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Video */
+iframe, video {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+/* Švandovo divadlo specifické */
+body.svandovo {
+    background-color: #d3d3d3; /* šedé pozadí */
+}
+
+body.svandovo header h1 {
+    color: #333333;
+}
+
+body.svandovo nav {
+    background-color: #bbbbbb;
+}
+
+/* Národní divadlo specifické */
+body.narodni {
+    background-color: #e6d3f7; /* fialové pozadí */
+}
+
+body.narodni header h1 {
+    color: #800080;
+}
+
+body.narodni nav {
+    background-color: #d4b3f0;
+}
+
+/* Pododkazy */
+.subnav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.subnav a {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #003300;
+    border: 1px solid #003300;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.subnav a:hover {
+    background-color: #003300;
+    color: #fff;
+}
